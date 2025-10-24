@@ -1,0 +1,5 @@
+<vdctx:MainViewModel xmlns:vdctx="clr-namespace:NoesisTemplateHotReload">
+  <vdctx:MainViewModel.SubObject>
+    <vdctx:SubViewModel/>
+  </vdctx:MainViewModel.SubObject>
+</vdctx:MainViewModel>

@@ -1,0 +1,5 @@
+<Project>
+  <Assembly>NoesisTemplateHotReload</Assembly>
+  <DefaultDataNamespace>NoesisTemplateHotReload</DefaultDataNamespace>
+  <StartupDocument>MainPage.xaml</StartupDocument>
+</Project>

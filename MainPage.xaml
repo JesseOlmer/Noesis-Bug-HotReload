@@ -1,0 +1,27 @@
+<Grid
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:hr="clr-namespace:NoesisTemplateHotReload"
+  mc:Ignorable="d"
+  d:DesignWidth="256"
+  d:DesignHeight="384"
+  x:Name="TileOverlayRoot"
+  Width="256"
+  Height="384"
+  Margin="0 0 0 138" d:DataContext="TestData">
+  <Grid.Resources>
+    <ResourceDictionary>
+      <DataTemplate DataType="hr:SubViewModel">
+        <Grid Width="100" Height="100" Background="Red">
+          <TextBlock Text="Change Me" Foreground="White" />
+        </Grid>
+      </DataTemplate>
+      <DataTemplate DataType="hr:MainViewModel">
+        <ContentPresenter Content="{Binding Path=SubObject}" />
+      </DataTemplate>
+    </ResourceDictionary>
+  </Grid.Resources>
+  <ContentPresenter Content="{Binding}"/>
+</Grid>
